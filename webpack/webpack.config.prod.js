@@ -122,7 +122,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ["**/*", "!robots.txt","!sitemap.xml"]
+      cleanOnceBeforeBuildPatterns: ["**/*"]
     }),
   ]
 };

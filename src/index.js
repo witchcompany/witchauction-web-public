@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactGA from "react-ga4";
 import { render } from 'react-dom';
 import { createBrowserHistory } from 'history'
 import { Provider } from 'react-redux';
@@ -22,9 +21,6 @@ const store = createStore(
     )
   )
 );
-
-ReactGA.initialize("G-RZX0WZERQV");
-ReactGA.send("pageview");
 
 render(
   <Provider store={store}>

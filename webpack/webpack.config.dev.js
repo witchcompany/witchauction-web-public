@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
-const port = process.env.PORT || 4000;
 
 require('dotenv').config();
 
@@ -122,23 +121,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ["**/*", "!robots.txt","!sitemap.xml"]
+      cleanOnceBeforeBuildPatterns: ["**/*"]
     }),
-  ],
-
-  // 개발 서버 설정
-  devServer: {
-    host: 'localhost',
-    port: port,
-    historyApiFallback: true,
-    contentBase: path.join(__dirname + "/dist"),
-    headers: { 'Access-Control-Allow-Origin': '*' },
-    proxy: {
-      '/dev': {
-        target: 'https://dev.witchauction.com',
-        changeOrigin: true,
-        pathRewrite: { '^/dev': '' },
-      }
-    }
-  },
+  ]
 };
