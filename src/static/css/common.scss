@@ -1,0 +1,177 @@
+@import './font.scss';
+@import './color.scss';
+@import './icons.scss';
+@import './button.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // cursor: default;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  @include body3;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color:$gray100;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+
+button{
+  border:none;
+}
+
+// ir
+.ir_pm {
+  display: block; 
+  overflow: hidden; 
+  font-size: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+}
+.ir_wa {
+  display: block; 
+  overflow: hidden; 
+  position: relative; 
+  z-index: -1;
+  width: 100%; height: 100%;
+  }
+.ir_so {
+  overflow: hidden; 
+  position: absolute;
+  width: 0; height: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+  }
+
+
+$mobile: 759px;
+$tablet: 760px;
+$desktop: 1040px;
+$desktop2: 1310px;
+
+
+@mixin mobile {
+  @media (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin maxDesktop {
+  @media (max-width: #{$desktop2}) {
+    @content;
+  }
+}
+
+.breadcrumb {
+  a {
+    @include font14;
+    color: $gray400;
+  }
+
+  .icon {
+    @include arrow_right_12px;
+    margin: 0 8px;
+    vertical-align: middle;
+  }
+
+  .current {
+    @include font14;
+    color: #fff;
+  }
+}
+
+
+@mixin flexCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  @include tablet{
+    @include body2;
+  }
+  @include mobile{
+    @include body2;
+  }
+}
+.badge{
+  display: inline-block;  
+  // margin-bottom: 1.8em;
+  text-align: center;
+  @include title2;
+
+   
+  @include mobile{
+    @include title8;
+  }
+
+  .ten{
+    border-radius: 4px;
+    padding:4px 24px;
+    color:$vividgreen;
+    background: rgba(65, 194, 4, 0.2);
+      
+    @include mobile{
+      padding:4px 8px;
+    }
+  }
+  .dutch{
+    border-radius: 4px;
+    padding:4px 13px;
+    color:$orange;
+    background:rgba(238, 106, 64, 0.2);
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(238, 106, 64, 0.6);
+    }
+    @include mobile{
+      padding:4px 8px;
+    }
+  }
+
+  
+}
+
+.container{
+
+  width: 1112px;
+  margin: 0 auto;
+  
+  @media (max-width:1279px){
+    width: 100%;
+    padding:0 84px;
+  }
+  @media (max-width:889px){
+    width: 100%;
+    padding:0 24px;
+  }
+}

@@ -1,0 +1,218 @@
+// 한글
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2');
+  unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+  font-family: 'Spoqa han sans NEO';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@latest/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+  unicode-range: U+AC00-U+D7A3;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9WdhyyTh89ZNpQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter_Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZ9hjp-Ek-_EeA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+
+
+//font: font-style font-variant font-weight font-size/line-height font-family
+//font-family: 'Bebas Neue', cursive;
+//font-family: 'Roboto', sans-serif;
+
+//body1
+@mixin body1{
+  font: 400 12px/20px 'Roboto', sans-serif;
+}
+@mixin body2{
+  font: 400 14px/22px 'Roboto', sans-serif;
+}
+@mixin body3{
+  font: 400 16px/22px 'Roboto', sans-serif;
+}
+@mixin body4{
+  font: 400 22px/30px 'Roboto', sans-serif;
+}
+
+
+//subTitle3
+@mixin subTitle1{
+  font: 500 16px/22px 'Roboto', sans-serif;
+}
+@mixin subTitle2{
+  font: 500 18px/24px 'Roboto', sans-serif;
+}
+@mixin subTitle3{
+  font: 500 24px/32px 'Roboto', sans-serif;
+}
+@mixin subTitle4{
+  font: 500 14px/20px 'Roboto', sans-serif;
+}
+@mixin subTitle5{
+  font: 500 12px/20px 'Roboto', sans-serif;
+}
+@mixin subTitle6{
+  font: 500 22px/30px 'Roboto', sans-serif;
+}
+
+//title
+@mixin title{
+  font: 400 42px/44px 'Bebas Neue', cursive;
+}
+@mixin title1{
+  font: 400 38px/36px 'Bebas Neue', cursive;
+}
+@mixin title2{
+  font: 400 34px/44px 'Bebas Neue', cursive;
+}
+@mixin title3{
+  font: 400 28px/36px 'Bebas Neue', cursive;
+}
+
+@mixin title4{
+  font: 400 20px/28px 'Bebas Neue', cursive;
+}
+@mixin title5{
+  font: 400 16px/22px 'Bebas Neue', cursive;
+}
+@mixin title6{
+  font: 400 68px/76px 'Bebas Neue', cursive;
+}
+@mixin title7{
+  font: 400 50px/58px 'Bebas Neue', cursive;
+}
+@mixin title8{
+  font: 400 24px/28px 'Bebas Neue', cursive;
+}
+@mixin title9{
+  font: 400 32px/42px 'Bebas Neue', cursive;
+}
+
+//hero
+@mixin hero{
+  font: 400 58px/68px 'Bebas Neue', cursive;
+}
+
+
+
+
+@mixin interBold {
+  font-family: 'Inter_Bold';
+  font-weight: 700;
+}
+
+@mixin font12 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin font14 {  
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@mixin font16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin font18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin font20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin font22 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@mixin font24 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@mixin font32 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+@mixin font34 {
+  font-size: 34px;
+  line-height: 42px;
+}
+
+@mixin font36 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+@mixin font40 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+@mixin font44 {
+  font-size: 44px;
+  line-height: 56px;
+}
+
+@mixin font48 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+@mixin font90 {
+  font-size: 90px;
+  line-height: 108px;
+}

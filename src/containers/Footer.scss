@@ -1,0 +1,170 @@
+@import '../static/css/common.scss';
+
+.footer {
+  padding: 3.5em 0;
+  background: $gray900;
+  @include body3;
+
+  .inner {
+    position: relative;
+
+    .slogan {
+      background: linear-gradient(91.79deg, #995AFF 0%, #FB74B5 100%);
+      @include interBold;
+      font-size: 6.4vw;
+      line-height: 9.07vw;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .link {
+      margin-top: 10.667vw;
+
+      li {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 5.333vw;
+        font-size: 3.734vw;
+        color: $gray300;
+      }
+
+      .icon {
+        @include arrow_top_right_16px;
+        margin-left: 2.135vw;
+        vertical-align: middle;
+      }
+    }
+  }
+  .sns {
+    padding:3em 0;
+    .discord {
+      @include logo_discord_28px;
+      margin-right: 1.5em;
+    }
+
+    .twitter {
+      @include logo_twitter_28px;
+      margin-right: 1.5em;
+    }
+
+    .instagram {
+      @include logo_instagram_28px;
+      margin-right: 1.5em;
+    }
+
+    .medium {
+      @include logo_medium_28px;
+    }
+    @include mobile{
+      padding:2em 0;
+    }
+  }
+
+  .copyright {
+    margin-top: 3em;
+    border-top: 1px solid $gray700;
+    color: $gray700;
+    letter-spacing: -0.6px;
+    text-align: center;
+    
+    @include mobile{
+      @include body1;
+    }
+
+    span {
+      margin-right: 1vw;
+    }
+  }
+  
+    .inner {
+      h3 {
+        text-align: center;
+        @include title2;
+      }
+
+      p{
+        text-align: center;
+        margin: 2em 0;
+
+        @media (max-width:400px) {
+          margin:14px 3em;
+        }
+      }
+
+      .discord {
+        @include flexCont;
+          a {
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          padding: 16px 72px 16px 48px;
+          border-radius: 40px;
+          background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon-arrow.svg')no-repeat right 10%  center #5865F2;
+          color: #fff;
+
+          span{
+            width: 24px;
+            height: 24px;
+            display:inline-block;
+            margin-right: .5em;
+          }
+        }
+      }
+
+      .sns {
+        margin: 3em 0;
+        padding: 0 104px;
+
+        .discord {
+          margin-right: 32px;
+        }
+
+        .twitter {
+          margin-right: 32px;
+        }
+
+        .instagram {
+          margin-right: 32px;
+        }
+
+        .medium {
+          margin-right: 32px;
+        }
+      }
+  
+      .link {
+        position: absolute;
+        top: 55px;
+        left: 60%;
+        width: 36%;
+        margin-top: 0;
+  
+        a {
+          margin-bottom: 24px;
+          @include font16;
+        }
+  
+        .icon {
+          margin-left: 8px;
+        }
+      }
+  
+      .copyright {
+        margin-top: 6em;
+        padding-top: 28px;
+        @include font14;
+
+        .bottom {
+          span {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  
+}

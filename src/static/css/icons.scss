@@ -1,0 +1,324 @@
+@mixin plusCircle_w_16px {
+  display: inline-block;
+  width: 4.27vw;
+  height: 4.27vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_plus_circle_white_16px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@mixin plus_18px {
+  display: inline-block;
+  width: 4.8vw;
+  height: 4.8vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_plus_18px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@mixin minus_18px {
+  display: inline-block;
+  width: 4.8vw;
+  height: 4.8vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_minus_18px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+// arrow
+@mixin arrow_left_w_24px {
+  display: inline-block;
+  width: 6.4vw;
+  height: 6.4vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_left_white_24px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin arrow_left_f_24px {
+  display: inline-block;
+  width: 6.4vw;
+  height: 6.4vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_left_f_24px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin arrow_right_12px {
+  display: inline-block;
+  width: 3.2vw;
+  height: 3.2vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_right_12px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@mixin arrow_right_f_24px {
+  display: inline-block;
+  width: 6.4vw;
+  height: 6.4vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_right_f_24px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin arrow_top_right_16px {
+  display: inline-block;
+  width: 4.27vw;
+  height: 4.27vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_top_right_16px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// logo
+@mixin logo_instagram_28px {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_instagram_28px.svg') no-repeat;
+  background-size: cover;
+
+  @include mobile{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin logo_medium_28px {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_medium_28px.svg') no-repeat;
+  background-size: cover;
+
+  @include mobile{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin logo_twitter_28px {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_twitter_28px.svg') no-repeat;
+  background-size: cover;
+
+  @include mobile{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin logo_discord_28px {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_discord_28px.svg') no-repeat;
+  background-size: cover;
+  
+  @include mobile{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.icon_label{
+  display: block;
+  width: 36px;
+  height: 36px;
+  // text-indent: -999;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_label_35x36.svg') no-repeat center;
+}
+.icon_desc{
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_desc.svg') no-repeat center;
+}
+.icon_about{
+  display: block;
+  width: 24px;
+  height: 24px;
+   text-indent: 100%;    
+    white-space: nowrap;    
+    overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_about.svg')no-repeat center;
+}
+.icon_detail{
+  display: block;
+  width: 24px;
+  height: 24px;
+   text-indent: 100%;    
+    white-space: nowrap;    
+    overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_detail.svg')no-repeat center;
+}
+.icon_tag{
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_tag.svg')no-repeat center;
+}
+
+.call_made{
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/call_made+400.svg')no-repeat center;
+}
+
+.icon_eth{
+  display: block;
+  width: 11px;
+  height: 18px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_eth.svg')no-repeat center;
+}
+.icon_people{
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/people.svg')no-repeat center;
+}
+.icon_time{
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_time.svg')no-repeat center;
+}
+.icon_discord{
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon-discord.svg')no-repeat center;
+}
+.call_made{
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/call_made+400.svg')no-repeat center;
+}
+.call_made_B{
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/call_made+900.svg')no-repeat center;
+}
+.icon_history {
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/History+300.svg')no-repeat;
+}
+.icon_history {
+  width: 16px;
+  height: 16px;
+  text-indent: 100%;    
+  white-space: nowrap;    
+  overflow: hidden;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/History+300.svg')no-repeat;
+}
+.icon_metamask{
+  width: 24px;
+  height: 24px;
+  background:url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/metamask-fox+2.svg')no-repeat;
+}
+.arrow_left{
+  width: 18px;
+  height: 18px;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/pagenation.png') no-repeat;
+  background-size: cover;
+}
+.arrow_right{
+  width: 18px;
+  height: 18px;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/pagenation.png') no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+.icon_cancel_600 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_cancel_600.svg') no-repeat;
+  background-size: cover;
+}
+
+.error_icon{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_warning.svg')no-repeat;
+  background-size: cover;
+}
+
+.icon_Checkmark{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url('https://witchauction.s3.ap-northeast-2.amazonaws.com/icon/icon_warning.svg')no-repeat;
+  background-size: cover;
+}

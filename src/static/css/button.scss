@@ -1,0 +1,308 @@
+//primary
+
+@mixin btn{
+    display: inline-block;
+    border-radius: 4px;
+    color:#fff;
+}
+
+@mixin btnPrOrange_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    background-color: $orange;
+}  
+@mixin btnPrOrange_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    background-color: $orange;
+}  
+
+@mixin btnPrOrange_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    background-color: $orange;
+}  
+
+//primary gray
+@mixin btnPrGray_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    background-color: $gray600;
+    color:$gray700
+}  
+@mixin btnPrGray_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    background-color: $gray600;
+    color:$gray700
+}  
+
+@mixin btnPrGray_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    background-color: $gray600;
+    color:$gray700
+}  
+
+
+//primary BoOrange
+@mixin btnPrBoOrange_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    border: 1px solid $orange;
+    color:$orange
+}  
+@mixin btnPrBoOrange_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    border: 1px solid $orange;
+    color:$orange
+}  
+
+@mixin btnPrBoOrange_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    border: 1px solid $orange;
+    color:$orange
+}  
+//secondary
+@mixin btnSeWhite_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    background-color: $gray100;
+    color:$gray900;
+}  
+@mixin btnSeWhite_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    color:$gray900;
+}  
+
+@mixin btnSeWhite_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    color:$gray900;
+}  
+
+//secondary border
+@mixin btnSeBoWhite_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    border: 1px solid $gray100;
+    color:$gray100
+}  
+@mixin btnSeBoWhite_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    border: 1px solid $gray100;
+    color:$gray100
+}  
+
+@mixin btnSeBoWhite_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    border: 1px solid $gray100;
+    color:$gray100
+}  
+
+
+
+//normal
+@mixin btnNogray_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    background-color: $gray700;
+    color:$fff;
+}  
+@mixin btnSeWhite_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    background-color: $gray700;
+    color:#fff;
+}  
+
+@mixin btnSeWhite_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    background-color: $gray700;
+    color:#fff;
+} 
+
+
+//normal border
+@mixin btnNoBogray_S{
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    border:1px solid $gray500;
+    color:$gray500;
+}  
+@mixin btnNoBogray_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    border:1px solid $gray500;
+    color:$gray500;
+}  
+
+@mixin btnNoBogray_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    border:1px solid $gray500;
+    color:$gray500;
+} 
+
+//point
+@mixin btnPogreen_S {
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    background-color:$green;
+    color:$gray900;
+}
+@mixin btnPogreen_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    background-color:$green;
+    color:$gray900;
+}  
+
+@mixin btnPogreen_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    background-color:$green;
+    color:$gray900;
+} 
+@mixin btnPoBogreen_S {
+    @include body1;
+    @include btn;
+    padding:9px 14px;
+    border:1px solid $green;
+    color:$green;
+}
+@mixin btnPoBogreen_L{
+    @include subTitle1;
+    @include btn;
+    padding:12px 14px;
+    border:1px solid $green;
+    color:$green;
+}  
+
+@mixin btnPoBogreen_XL{
+    @include subTitle2;
+    @include btn;
+    padding:16px;
+    border:1px solid $green;
+    color:$green;
+} 
+
+//primary
+.btnPrOrange_S{
+    @include btnPrOrange_S;
+  }
+  .btnPrOrange_L{
+    @include btnPrOrange_L;
+  }
+  .btnPrOrange_XL{
+    @include btnPrOrange_XL;
+  }
+  
+  .btnPrGray_S{
+    @include btnPrGray_S;
+  }
+  .btnPrGray_L{
+    @include btnPrGray_L;
+  }
+  .btnPrGray_XL{
+    @include btnPrGray_XL;
+  }
+  .btnPrBoOrange_S{
+    @include btnPrBoOrange_S;
+  }
+  .btnPrBoOrange_L{
+    @include btnPrBoOrange_L;
+  }
+  .btnPrBoOrange_XL{
+    @include btnPrBoOrange_XL;
+  }
+  
+  //secondary
+  .btnSeWhite_S{
+    @include btnSeWhite_S;
+  }
+  .btnSeWhite_L{
+    @include btnSeWhite_L;
+  }
+  .btnSeWhite_XL{
+    @include btnSeWhite_XL;
+  }
+  .btnSeBoWhite_S{
+    @include btnSeBoWhite_S;
+  }
+  .btnSeBoWhite_L{
+    @include btnSeBoWhite_L;
+  }
+  .btnSeBoWhite_XL{
+    @include btnSeBoWhite_XL;
+  }
+  
+  //normal
+  .btnNogray_S{
+    @include btnSeBoWhite_S;
+  }
+  .btnSeWhite_L{
+    @include btnSeBoWhite_L;
+  }
+  .btnSeWhite_XL{
+    @include btnSeBoWhite_XL;
+  }
+  .btnNoBogray_S{
+    @include btnSeBoWhite_S;
+  }
+  .btnNoBogray_L{
+    @include btnSeBoWhite_L;
+  }
+  .btnNoBogray_XL{
+    @include btnSeBoWhite_XL;
+  }
+  
+  //point
+  .btnPogreen_S{
+    @include btnPogreen_S;
+  }
+  .btnPogreen_L{
+    @include btnPogreen_L;
+  }
+  .btnPogreen_XL{
+    @include btnPogreen_XL;
+  }
+  .btnPoBogreen_S{
+    @include btnPoBogreen_S;
+  }
+  .btnPoBogreen_L{
+    @include btnPoBogreen_L;
+  }
+  .btnPoBogreen_XL{
+    @include btnPoBogreen_XL;
+  }
